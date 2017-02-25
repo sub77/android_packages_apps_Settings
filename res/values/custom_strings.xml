@@ -116,4 +116,8 @@
     <!-- Magisk Manager -->
     <string name="magisk_title">Magisk Manager</string>
 
+    <!-- Substratum -->
+    <string name="substratum_title">Substratum</string>
+
+
 </resources>
