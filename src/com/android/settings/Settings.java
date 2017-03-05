@@ -172,5 +172,6 @@ public class Settings extends SettingsActivity {
     public static class DevicePartsActivity extends SettingsActivity { /* empty */ }
     public static class OmniJawsSettingsActivity extends SettingsActivity { /* empty */ }
     public static class SubstratumActivity extends SettingsActivity { /* empty */ }
+    public static class MagiskActivity extends SettingsActivity { /* empty */ }
 
 }

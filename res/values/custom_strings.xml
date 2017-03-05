@@ -112,4 +112,8 @@
     <string name="reset_wallpaper_notice">Default wallpaper restored</string>
     <string name="columns_menu">Columns layout</string>
     <string name="hide_summary_menu">Hide summary</string>
+
+    <!-- Magisk Manager -->
+    <string name="magisk_title">Magisk Manager</string>
+
 </resources>
