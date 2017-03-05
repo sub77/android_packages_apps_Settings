@@ -25,4 +25,6 @@
    <string name="menu_show_substratum_icons">Show icon overlays</string>
    <string name="menu_hide_substratum_icons">Hide icon overlays</string>
 
+   <string name="substratum_title">Substratum</string>
+
 </resources>

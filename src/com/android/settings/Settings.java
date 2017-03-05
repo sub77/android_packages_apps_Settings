@@ -171,5 +171,6 @@ public class Settings extends SettingsActivity {
     public static class SuperUserActivity extends SettingsActivity { /* empty */ }
     public static class DevicePartsActivity extends SettingsActivity { /* empty */ }
     public static class OmniJawsSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class SubstratumActivity extends SettingsActivity { /* empty */ }
 
 }
