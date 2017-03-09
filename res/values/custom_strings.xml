@@ -116,4 +116,10 @@
     <!-- SD Clang version -->
     <string name="sdc_version">Clang</string>
     <string name="sdc_version_default">None</string>
+
+    <!-- Magisk Manager -->
+    <string name="magisk_title">Magisk Manager</string>
+
+    <!-- Substratum -->
+    <string name="substratum_title">Substratum</string>
 </resources>
