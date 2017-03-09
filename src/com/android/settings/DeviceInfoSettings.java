@@ -72,6 +72,8 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_DEVICE_FEEDBACK = "device_feedback";
     private static final String KEY_SAFETY_LEGAL = "safetylegal";
     private static final String KEY_MOD_VERSION = "mod_version";
+    private static final String KEY_SDC_VERSION = "sdc_version";
+    private static final String PROPERTY_SDC_VERSION = "ro.sdc.version";
 
     static final int TAPS_TO_BE_A_DEVELOPER = 7;
 
@@ -121,6 +123,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         findPreference(KEY_BUILD_NUMBER).setEnabled(true);
         findPreference(KEY_KERNEL_VERSION).setSummary(DeviceInfoUtils.getFormattedKernelVersion());
         setValueSummary(KEY_MOD_VERSION, "ro.omni.version");
+        setValueSummary(KEY_SDC_VERSION, "ro.sdc.version");
 
         if (!SELinux.isSELinuxEnabled()) {
             String status = getResources().getString(R.string.selinux_status_disabled);
@@ -137,6 +140,10 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         // Remove Safety information preference if PROPERTY_URL_SAFETYLEGAL is not set
         removePreferenceIfPropertyMissing(getPreferenceScreen(), KEY_SAFETY_LEGAL,
                 PROPERTY_URL_SAFETYLEGAL);
+
+        // Remove SD Clang information if property is not present
+        removePreferenceIfPropertyMissing(getPreferenceScreen(), KEY_SDC_VERSION,
+                PROPERTY_SDC_VERSION);
 
         // Remove Equipment id preference if FCC ID is not set by RIL
         removePreferenceIfPropertyMissing(getPreferenceScreen(), KEY_EQUIPMENT_ID,
